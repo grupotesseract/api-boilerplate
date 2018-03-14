@@ -6,7 +6,8 @@ Projeto Laravel 5.5 para facilitar a criacao de novos projetos
 - Laravel 5.5
 - Laravel Generator
 - Adminlte
-- Languages / locale
+- Yajra DataTables v8
+- Languages / locale pt-BR
 
 ## Clone com submodulos
 
