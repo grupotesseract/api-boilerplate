@@ -3,13 +3,12 @@
 use Illuminate\Database\Seeder;
 
 /**
- * Class: EstadosTableSeeder
+ * Class: EstadosTableSeeder.
  *
  * @see Seeder
  */
 class EstadosTableSeeder extends Seeder
 {
-
     /**
      * Run the database seeds.
      *
@@ -47,5 +46,4 @@ class EstadosTableSeeder extends Seeder
         DB::table('estados')->insert(['id' => 26, 'nome' => 'Sergipe', 'sigla' => 'SE']);
         DB::table('estados')->insert(['id' => 27, 'nome' => 'Tocantins', 'sigla' => 'TO']);
     }
-
 }

@@ -5,7 +5,6 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateCidadesTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -33,5 +32,4 @@ class CreateCidadesTable extends Migration
     {
         Schema::drop('cidades');
     }
-
 }
