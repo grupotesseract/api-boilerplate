@@ -86,7 +86,7 @@ return [
         'save_schema_file' => true,
         'tables_searchable_default' => false,
         'repository_pattern' => true,
-        'excluded_fields' => ['id'],// Array of columns that doesn't required while creating module
+        'excluded_fields' => ['id'], // Array of columns that doesn't required while creating module
     ],
 
     /*
