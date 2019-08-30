@@ -2,14 +2,15 @@
 
 <p align="center">
   API da empresa Fibra<br>
-  <small>Criado por <a href="https://grupotesseract.com.br">Grupo Tesseract</a></small><br>
-  <img src="https://img.shields.io/badge/version-0.1.1-E03A2C.svg" align="center" alt="Version 0.1.1">
+  <img src="https://img.shields.io/badge/version-0.0.1-5B7587.svg" align="center" alt="Version 0.1.1"><br>
+  <br>
+  <a href="#requisitos">Requisitos</a> •
+  <a href="#instalacao">Instalação</a> •
+  <a href="#deploy">Deploy</a><br>
+  <small>Criado com muito ☕ por <a href="https://grupotesseract.com.br">Grupo Tesseract</a></small>
 </p>
 
 <p align="center">
-  <a href="#requisitos">Requisitos</a> •
-  <a href="#instalacao">Instalação</a> •
-  <a href="#deploy">Deploy</a>
 </p>
 
 ## Requisitos
