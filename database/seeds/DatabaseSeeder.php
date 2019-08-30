@@ -11,6 +11,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        //Seeds que devem ser executados em production
+        if (\App::environment('production')) {
+            $this->call(EstadosTableSeeder::class);
+            $this->call(CidadesSQLSeeder::class);
+        } else {
+            $this->call(EstadosTableSeeder::class);
+            $this->call(CidadesSQLSeeder::class);
+        }
     }
 }
