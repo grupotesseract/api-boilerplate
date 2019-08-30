@@ -5,8 +5,7 @@ namespace App\Models;
 use Eloquent as Model;
 
 /**
- * Class Estado
- * @package App\Models
+ * Class Estado.
  * @version August 30, 2019, 7:44 pm -03
  *
  * @property \Illuminate\Database\Eloquent\Collection estados
@@ -15,7 +14,6 @@ use Eloquent as Model;
  */
 class Estado extends Model
 {
-
     public $table = 'estados';
 
     const CREATED_AT = 'created_at';
@@ -23,7 +21,7 @@ class Estado extends Model
 
     public $fillable = [
         'nome',
-        'sigla'
+        'sigla',
     ];
 
     /**
@@ -34,17 +32,17 @@ class Estado extends Model
     protected $casts = [
         'id' => 'integer',
         'nome' => 'string',
-        'sigla' => 'string'
+        'sigla' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
         'nome' => 'required',
-        'sigla' => 'required'
+        'sigla' => 'required',
     ];
 
     /**

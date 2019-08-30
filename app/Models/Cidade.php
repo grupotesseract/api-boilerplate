@@ -5,15 +5,14 @@ namespace App\Models;
 use Eloquent as Model;
 
 /**
- * Class Cidade
- * @package App\Models
+ * Class Cidade.
  * @version August 30, 2019, 7:50 pm -03
  *
  * @property \App\Models\Estado estado
  * @property string nome
  * @property string nome_sanitized
  * @property string ibge_code
- * @property integer estado_id
+ * @property int estado_id
  */
 class Cidade extends Model
 {
@@ -26,7 +25,7 @@ class Cidade extends Model
         'nome',
         'nome_sanitized',
         'ibge_code',
-        'estado_id'
+        'estado_id',
     ];
 
     /**
@@ -39,17 +38,17 @@ class Cidade extends Model
         'nome' => 'string',
         'nome_sanitized' => 'string',
         'ibge_code' => 'string',
-        'estado_id' => 'integer'
+        'estado_id' => 'integer',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
         'nome' => 'required',
-        'estado_id' => 'required'
+        'estado_id' => 'required',
     ];
 
     /**

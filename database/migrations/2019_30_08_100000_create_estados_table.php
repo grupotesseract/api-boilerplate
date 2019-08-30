@@ -5,7 +5,6 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateEstadosTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -30,5 +29,4 @@ class CreateEstadosTable extends Migration
     {
         Schema::drop('estados');
     }
-
 }
