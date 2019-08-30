@@ -23,7 +23,7 @@ return [
         'api_test'          => base_path('tests/APIs/'),
         'tests'             => base_path('tests/'),
         'views'             => resource_path('views/'),
-        'schema_files'      => resource_path('model_schemas/'),
+        'schema_files'      => database_path('model_schemas/'),
         'templates_dir'     => resource_path('infyom/infyom-generator-templates/'),
         'seeder'            => database_path('seeds/'),
         'database_seeder'   => database_path('seeds/DatabaseSeeder.php'),
@@ -109,7 +109,7 @@ return [
     |
     */
     'add_on' => [
-        'swagger'       => true,
+        'swagger'       => false,
         'tests'         => true,
         'datatables'    => true,
         'menu'          => [
