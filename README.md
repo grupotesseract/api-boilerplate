@@ -19,20 +19,19 @@
 ## Instalação
 
 ``` sh
-git clone ...
-cd ...
+git clone https://github.com/grupotesseract/fibra-api
+cd fibra-api
+
+cp .env.example .env
+./vessel start
+./vessel comp i
+./vessel art key:generate
+./vessel art migrate
+
+./vessel yarn
+./vessel yarn watch
 ```
 
 ## Deploy
 
-### Testing environment
-
-``` sh
-git remote add test ...
-```
-
-### Production environment
-
-``` sh
-git remote add prod ...
-```
+> Em breve...
