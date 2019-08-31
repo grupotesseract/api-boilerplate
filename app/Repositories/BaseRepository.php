@@ -153,9 +153,8 @@ abstract class BaseRepository
         return $query->find($id, $columns);
     }
 
-
     /**
-     * Find data by field and value
+     * Find data by field and value.
      *
      * @param       $field
      * @param       $value
@@ -166,11 +165,12 @@ abstract class BaseRepository
     public function findByField($field, $value = null, $columns = ['*'])
     {
         $result = $this->model->where($field, '=', $value)->get($columns);
+
         return $result;
     }
 
     /**
-     * findWithoutFail
+     * findWithoutFail.
      *
      * @param mixed $id
      * @param string $columns
@@ -183,7 +183,6 @@ abstract class BaseRepository
             return;
         }
     }
-
 
     /**
      * Update model record for given id.

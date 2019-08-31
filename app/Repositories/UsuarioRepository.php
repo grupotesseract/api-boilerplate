@@ -45,7 +45,7 @@ class UsuarioRepository extends BaseRepository
     }
 
     /**
-     * Autenticação via API
+     * Autenticação via API.
      *
      * @return \Illuminate\Http\Response
      * @return Response
@@ -53,8 +53,9 @@ class UsuarioRepository extends BaseRepository
     public function login($usuario, $request)
     {
         if (Hash::check($request->password, $usuario->password)) {
-            $token = $usuario->createToken(env('PASSPORT_CLIENT','Laravel Password Grant Client'))->accessToken;
+            $token = $usuario->createToken(env('PASSPORT_CLIENT', 'Laravel Password Grant Client'))->accessToken;
             $response = ['token' => $token];
+
             return $response;
         } else {
             return false;

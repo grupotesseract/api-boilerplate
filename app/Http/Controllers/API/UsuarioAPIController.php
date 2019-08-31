@@ -127,9 +127,8 @@ class UsuarioAPIController extends AppBaseController
         return $this->sendResponse($id, 'Usuario deleted successfully');
     }
 
-
     /**
-     * Autenticação via API
+     * Autenticação via API.
      *
      * @return \Illuminate\Http\Response
      * @return Response
@@ -144,7 +143,7 @@ class UsuarioAPIController extends AppBaseController
                 return $this->sendResponse(
                     [
                         'usuario' => $usuario->toArray(),
-                        'token' => $token
+                        'token' => $token,
                     ],
                     'Usuário autenticou via API com Sucesso'
                 );
@@ -156,9 +155,8 @@ class UsuarioAPIController extends AppBaseController
         }
     }
 
-
     /**
-     * Metodo para retornar o usuário logado a partir do token
+     * Metodo para retornar o usuário logado a partir do token.
      *
      * @return JSON
      */
@@ -173,9 +171,4 @@ class UsuarioAPIController extends AppBaseController
 
         return $this->sendResponse($usuario->toArray(), 'Usuario retrieved successfully');
     }
-
-
-
-
-
 }

@@ -11,8 +11,6 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('usuario', 'UsuarioAPIController@showAuthenticated');
 });
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Rotas Livres
