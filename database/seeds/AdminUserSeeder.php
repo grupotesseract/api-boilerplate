@@ -15,7 +15,7 @@ class AdminUserSeeder extends Seeder
             [
             'email' => env('ADMIN_EMAIL', 'admin@tesseract.com'),
             'password' => bcrypt(env('ADMIN_PASSWORD', '12344321')),
-            'nome' => 'Admin Tesseract'
+            'nome' => 'Admin Tesseract',
             ]
         );
     }
