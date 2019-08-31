@@ -2,8 +2,8 @@
 
 @if (isset($Model) && $Model->cidade)
 
-<!-- Select de Categorias  -->
-<div class="form-group col-sm-12">
+<!-- Select de Cidades  -->
+<div class="form-group">
     {!! Form::label('cidades', 'Cidade') !!} <br>
     {!! Form::select('cidade_id', $cidades, $Model->cidade->id, ['class' => 'form-control ']
     ) !!}
@@ -11,10 +11,10 @@
 
 @else
 
-<!-- Select de Categorias  -->
-<div class="form-group col-sm-12">
+<!-- Select de Cidades  -->
+<div class="form-group">
     {!! Form::label('cidades', 'Cidade') !!} <br>
-    {!! Form::select('cidade_id', $cidades, null, ['class' => 'form-control ']
+    {!! Form::select('cidade_id', [''=>'']+$cidades, null, ['class' => 'form-control ']
     ) !!}
 </div>
 

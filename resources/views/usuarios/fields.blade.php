@@ -30,13 +30,25 @@
 
 @if (isset($usuario))
 
-@include('cidades.select', [
-    'Model' => $usuario
-])
+    <div class="form-group col-sm-6">
+        @include('estados.select', [
+            'Model' => $usuario
+        ])
+    </div>
+    <div class="form-group col-sm-6">
+        @include('cidades.select', [
+            'Model' => $usuario
+        ])
+    </div>
 
 @else
 
-@include('cidades.select')
+    <div class="form-group col-sm-6">
+        @include('estados.select')
+    </div>
+    <div class="form-group col-sm-6">
+        @include('cidades.select')
+    </div>
 
 @endif
 

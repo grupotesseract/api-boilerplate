@@ -39,16 +39,25 @@ class CidadeRepository extends BaseRepository
     }
 
     /**
-     * undocumented function
+     * Retorna um array de Cidades no formato [id => 'nome']
      *
-     * @return void
+     * @param mixed $estadoId - Para obter o array de cidades de 1 estado.
+     *
+     * @return array
      */
-    public function getArrayParaSelect()
+    public function getArrayParaSelect($estadoId=null)
     {
-        return $this->model()::pluck('nome', 'id')->all();
+        //Se vier estadoId, filtrar antes do pluck
+        if ($estadoId) {
+            return $this->model()
+                ::where('estado_id', $estadoId)
+                ->pluck('nome', 'id')
+                ->all();
+        }
+
+        return $this->model()
+            ::pluck('nome', 'id')
+            ->all();
     }
-
-
-
 
 }

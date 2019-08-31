@@ -23,6 +23,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \View::composer('cidades.select', '\App\ViewComposers\CidadeComposer');
+        View::composer('estados.select', '\App\ViewComposers\EstadoComposer');
+        View::composer('cidades.select', '\App\ViewComposers\CidadeComposer');
     }
 }
