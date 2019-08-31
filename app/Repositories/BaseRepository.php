@@ -153,6 +153,38 @@ abstract class BaseRepository
         return $query->find($id, $columns);
     }
 
+
+    /**
+     * Find data by field and value
+     *
+     * @param       $field
+     * @param       $value
+     * @param array $columns
+     *
+     * @return mixed
+     */
+    public function findByField($field, $value = null, $columns = ['*'])
+    {
+        $result = $this->model->where($field, '=', $value)->get($columns);
+        return $result;
+    }
+
+    /**
+     * findWithoutFail
+     *
+     * @param mixed $id
+     * @param string $columns
+     */
+    public function findWithoutFail($id, $columns = ['*'])
+    {
+        try {
+            return $this->find($id, $columns);
+        } catch (Exception $e) {
+            return;
+        }
+    }
+
+
     /**
      * Update model record for given id.
      *
