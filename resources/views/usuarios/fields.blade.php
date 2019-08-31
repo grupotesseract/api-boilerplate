@@ -28,6 +28,20 @@
     {!! Form::text('endereco', null, ['class' => 'form-control']) !!}
 </div>
 
+@if (isset($usuario))
+
+@include('cidades.select', [
+    'Model' => $usuario
+])
+
+@else
+
+@include('cidades.select')
+
+@endif
+
+
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

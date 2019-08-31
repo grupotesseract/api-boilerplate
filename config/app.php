@@ -154,6 +154,7 @@ return [
          * Package Service Providers...
          */
 
+
         /*
          * Application Service Providers...
          */
@@ -170,6 +171,7 @@ return [
         \InfyOm\CoreUITemplates\CoreUITemplatesServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Vessel\VesselServiceProvider::class,
+        App\Providers\ViewServiceProvider::class,
 
     ],
 

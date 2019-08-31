@@ -1,7 +1,6 @@
 <?php
 
 namespace App\DataTables;
-
 use App\Models\Usuario;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
@@ -67,12 +66,7 @@ class UsuarioDataTable extends DataTable
         return [
             'nome',
             'email',
-            'email_verified_at',
-            'password',
             'telefone',
-            'endereco',
-            'cidade_id',
-            'remember_token'
         ];
     }
 
