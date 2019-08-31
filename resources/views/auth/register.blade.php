@@ -35,11 +35,11 @@
                                 <i class="icon-user"></i>
                               </span>
                             </div>
-                            <input type="text" class="form-control {{ $errors->has('name')?'is-invalid':'' }}" name="name" value="{{ old('name') }}"
-                                   placeholder="Full Name">
-                            @if ($errors->has('name'))
+                            <input type="text" class="form-control {{ $errors->has('nome')?'is-invalid':'' }}" name="nome" value="{{ old('nome') }}"
+                                   placeholder="Nome">
+                            @if ($errors->has('nome'))
                                 <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('name') }}</strong>
+                                    <strong>{{ $errors->first('nome') }}</strong>
                                 </span>
                             @endif
                         </div>

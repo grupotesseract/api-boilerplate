@@ -25,12 +25,10 @@ class Usuario extends Authenticatable
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
-
     protected $dates = ['deleted_at'];
 
-
     public $fillable = [
-        'name',
+        'nome',
         'email',
         'email_verified_at',
         'password',
@@ -44,7 +42,7 @@ class Usuario extends Authenticatable
      */
     protected $casts = [
         'id' => 'integer',
-        'name' => 'string',
+        'nome' => 'string',
         'email' => 'string',
         'email_verified_at' => 'datetime',
         'password' => 'string',
@@ -57,9 +55,9 @@ class Usuario extends Authenticatable
      * @var array
      */
     public static $rules = [
-        'name' => 'required',
-        'email' => 'required',
-        'password' => 'required'
+        'nome' => 'required|string|max:255',
+        'email' => 'required|string|email|max:255|unique:usuarios',
+        'password' => 'required|string|min:6|confirmed',
     ];
 
 
