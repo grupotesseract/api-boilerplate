@@ -24,3 +24,5 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 
+Route::get('/estados/{id}/cidades', 'CidadeController@getPorEstado');
+

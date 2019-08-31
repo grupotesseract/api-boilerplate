@@ -52,11 +52,10 @@ class UsuarioController extends AppBaseController
     public function store(CreateUsuarioRequest $request)
     {
         $input = $request->all();
-        $input['password'] = bcrypt($input['password']);
 
         $usuario = $this->usuarioRepository->create($input);
 
-        Flash::success('Usuario saved successfully.');
+        Flash::success('Usuário salvo com sucesso.');
 
         return redirect(route('usuarios.index'));
     }
@@ -73,7 +72,7 @@ class UsuarioController extends AppBaseController
         $usuario = $this->usuarioRepository->find($id);
 
         if (empty($usuario)) {
-            Flash::error('Usuario not found');
+            Flash::error('Usuário não encontrado');
 
             return redirect(route('usuarios.index'));
         }
@@ -93,7 +92,7 @@ class UsuarioController extends AppBaseController
         $usuario = $this->usuarioRepository->find($id);
 
         if (empty($usuario)) {
-            Flash::error('Usuario not found');
+            Flash::error('Usuário não encontrado');
 
             return redirect(route('usuarios.index'));
         }
@@ -114,14 +113,14 @@ class UsuarioController extends AppBaseController
         $usuario = $this->usuarioRepository->find($id);
 
         if (empty($usuario)) {
-            Flash::error('Usuario not found');
+            Flash::error('Usuário não encontrado');
 
             return redirect(route('usuarios.index'));
         }
 
         $usuario = $this->usuarioRepository->update($request->all(), $id);
 
-        Flash::success('Usuario updated successfully.');
+        Flash::success('Usuario atualizado com sucesso.');
 
         return redirect(route('usuarios.index'));
     }
@@ -138,14 +137,14 @@ class UsuarioController extends AppBaseController
         $usuario = $this->usuarioRepository->find($id);
 
         if (empty($usuario)) {
-            Flash::error('Usuario not found');
+            Flash::error('Usuário não encontrado');
 
             return redirect(route('usuarios.index'));
         }
 
         $this->usuarioRepository->delete($id);
 
-        Flash::success('Usuario deleted successfully.');
+        Flash::success('Usuário removido com sucesso.');
 
         return redirect(route('usuarios.index'));
     }
