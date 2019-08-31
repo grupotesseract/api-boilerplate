@@ -15,9 +15,11 @@ class DatabaseSeeder extends Seeder
         if (\App::environment('production')) {
             $this->call(EstadosTableSeeder::class);
             $this->call(CidadesSQLSeeder::class);
+            $this->call(AdminUserSeeder::class);
         } else {
             $this->call(EstadosTableSeeder::class);
             $this->call(CidadesSQLSeeder::class);
+            $this->call(AdminUserSeeder::class);
         }
     }
 }

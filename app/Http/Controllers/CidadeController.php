@@ -16,7 +16,7 @@ class CidadeController extends AppBaseController
     }
 
     /**
-     * Metodo para retornar as cidades de um estado
+     * Metodo para retornar as cidades de um estado.
      *
      * @return JSON
      */
