@@ -1,13 +1,13 @@
-<!-- Name Field -->
+<!-- Nome Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('name', 'Name:') !!}
-    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+    {!! Form::label('nome', 'Nome:') !!}
+    {!! Form::text('nome', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Email Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('email', 'Email:') !!}
-    {!! Form::email('email', null, ['class' => 'form-control']) !!}
+    {!! Form::text('email', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Email Verified At Field -->
@@ -33,7 +33,25 @@
 <!-- Password Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('password', 'Password:') !!}
-    {!! Form::password('password', ['class' => 'form-control']) !!}
+    {!! Form::text('password', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Telefone Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('telefone', 'Telefone:') !!}
+    {!! Form::text('telefone', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Endereco Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('endereco', 'Endereco:') !!}
+    {!! Form::text('endereco', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Cidade Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('cidade_id', 'Cidade Id:') !!}
+    {!! Form::text('cidade_id', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Remember Token Field -->

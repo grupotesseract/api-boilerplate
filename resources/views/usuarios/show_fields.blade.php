@@ -4,10 +4,10 @@
     <p>{!! $usuario->id !!}</p>
 </div>
 
-<!-- Name Field -->
+<!-- Nome Field -->
 <div class="form-group">
-    {!! Form::label('name', 'Name:') !!}
-    <p>{!! $usuario->name !!}</p>
+    {!! Form::label('nome', 'Nome:') !!}
+    <p>{!! $usuario->nome !!}</p>
 </div>
 
 <!-- Email Field -->
@@ -26,6 +26,30 @@
 <div class="form-group">
     {!! Form::label('password', 'Password:') !!}
     <p>{!! $usuario->password !!}</p>
+</div>
+
+<!-- Deleted At Field -->
+<div class="form-group">
+    {!! Form::label('deleted_at', 'Deleted At:') !!}
+    <p>{!! $usuario->deleted_at !!}</p>
+</div>
+
+<!-- Telefone Field -->
+<div class="form-group">
+    {!! Form::label('telefone', 'Telefone:') !!}
+    <p>{!! $usuario->telefone !!}</p>
+</div>
+
+<!-- Endereco Field -->
+<div class="form-group">
+    {!! Form::label('endereco', 'Endereco:') !!}
+    <p>{!! $usuario->endereco !!}</p>
+</div>
+
+<!-- Cidade Id Field -->
+<div class="form-group">
+    {!! Form::label('cidade_id', 'Cidade Id:') !!}
+    <p>{!! $usuario->cidade_id !!}</p>
 </div>
 
 <!-- Remember Token Field -->

@@ -65,10 +65,13 @@ class UsuarioDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'name',
+            'nome',
             'email',
             'email_verified_at',
             'password',
+            'telefone',
+            'endereco',
+            'cidade_id',
             'remember_token'
         ];
     }

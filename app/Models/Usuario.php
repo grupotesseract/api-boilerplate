@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * Class Usuario
  * @package App\Models
- * @version August 30, 2019, 9:33 pm -03
+ * @version August 30, 2019, 9:38 pm -03
  *
  * @property \App\Models\Cidade cidade
  * @property string nome
@@ -25,9 +25,6 @@ class Usuario extends Authenticatable
     use SoftDeletes;
 
     public $table = 'usuarios';
-
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
 
     protected $dates = ['deleted_at'];
 

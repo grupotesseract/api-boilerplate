@@ -20,7 +20,7 @@ class CreateUsuariosTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->datetime('deleted_at')->nullable();
-            $table->string('telefone', 40)->nullable();
+            $table->string('telefone', 50)->nullable();
             $table->string('endereco')->nullable();
             $table->integer('cidade_id')->nullable();
             $table->foreign('cidade_id')->references('id')->on('cidades');
