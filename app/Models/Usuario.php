@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
- * Class Usuario
- * @package App\Models
+ * Class Usuario.
  * @version August 30, 2019, 9:38 pm -03
  *
  * @property \App\Models\Cidade cidade
@@ -17,7 +16,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @property string password
  * @property string telefone
  * @property string endereco
- * @property integer cidade_id
+ * @property int cidade_id
  * @property string remember_token
  */
 class Usuario extends Authenticatable
@@ -36,7 +35,7 @@ class Usuario extends Authenticatable
         'telefone',
         'endereco',
         'cidade_id',
-        'remember_token'
+        'remember_token',
     ];
 
     /**
@@ -53,24 +52,24 @@ class Usuario extends Authenticatable
         'telefone' => 'string',
         'endereco' => 'string',
         'cidade_id' => 'integer',
-        'remember_token' => 'string'
+        'remember_token' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
         'nome' => 'required',
         'email' => 'required|email|unique:usuarios',
-        'password' => 'required'
+        'password' => 'required',
     ];
 
     protected $hidden = [
         'password',
         'email_verified_at',
-        'remember_token'
+        'remember_token',
     ];
 
     /**

@@ -6,11 +6,9 @@ use App\Models\Estado;
 use App\Repositories\BaseRepository;
 
 /**
- * Class EstadoRepository
- * @package App\Repositories
+ * Class EstadoRepository.
  * @version August 30, 2019, 9:38 pm -03
-*/
-
+ */
 class EstadoRepository extends BaseRepository
 {
     /**
@@ -22,7 +20,7 @@ class EstadoRepository extends BaseRepository
     ];
 
     /**
-     * Return searchable fields
+     * Return searchable fields.
      *
      * @return array
      */
@@ -32,7 +30,7 @@ class EstadoRepository extends BaseRepository
     }
 
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {
@@ -40,7 +38,7 @@ class EstadoRepository extends BaseRepository
     }
 
     /**
-     * Retorna um array de Estados no formato [id => 'nome']
+     * Retorna um array de Estados no formato [id => 'nome'].
      *
      * @return array
      */
@@ -48,8 +46,4 @@ class EstadoRepository extends BaseRepository
     {
         return $this->model()::pluck('nome', 'id')->all();
     }
-
-
-
-
 }

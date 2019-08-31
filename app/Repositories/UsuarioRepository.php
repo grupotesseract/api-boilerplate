@@ -6,11 +6,9 @@ use App\Models\Usuario;
 use App\Repositories\BaseRepository;
 
 /**
- * Class UsuarioRepository
- * @package App\Repositories
+ * Class UsuarioRepository.
  * @version August 30, 2019, 9:38 pm -03
-*/
-
+ */
 class UsuarioRepository extends BaseRepository
 {
     /**
@@ -24,11 +22,11 @@ class UsuarioRepository extends BaseRepository
         'telefone',
         'endereco',
         'cidade_id',
-        'remember_token'
+        'remember_token',
     ];
 
     /**
-     * Return searchable fields
+     * Return searchable fields.
      *
      * @return array
      */
@@ -38,7 +36,7 @@ class UsuarioRepository extends BaseRepository
     }
 
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {

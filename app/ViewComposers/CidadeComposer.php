@@ -10,7 +10,7 @@ class CidadeComposer
     protected $cidadeRepository;
 
     /**
-     * __construct
+     * __construct.
      *
      * @param CidadeRepository $cidadeRepository
      */
