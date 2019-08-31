@@ -2,22 +2,20 @@
 
 namespace App\Http\Controllers\API;
 
+use Response;
+use App\Models\Usuario;
+use Illuminate\Http\Request;
+use App\Repositories\UsuarioRepository;
+use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\API\CreateUsuarioAPIRequest;
 use App\Http\Requests\API\UpdateUsuarioAPIRequest;
-use App\Models\Usuario;
-use App\Repositories\UsuarioRepository;
-use Illuminate\Http\Request;
-use App\Http\Controllers\AppBaseController;
-use Response;
 
 /**
- * Class UsuarioController
- * @package App\Http\Controllers\API
+ * Class UsuarioController.
  */
-
 class UsuarioAPIController extends AppBaseController
 {
-    /** @var  UsuarioRepository */
+    /** @var UsuarioRepository */
     private $usuarioRepository;
 
     public function __construct(UsuarioRepository $usuarioRepo)
@@ -27,7 +25,7 @@ class UsuarioAPIController extends AppBaseController
 
     /**
      * Display a listing of the Usuario.
-     * GET|HEAD /usuarios
+     * GET|HEAD /usuarios.
      *
      * @param Request $request
      * @return Response
@@ -45,7 +43,7 @@ class UsuarioAPIController extends AppBaseController
 
     /**
      * Store a newly created Usuario in storage.
-     * POST /usuarios
+     * POST /usuarios.
      *
      * @param CreateUsuarioAPIRequest $request
      *
@@ -62,7 +60,7 @@ class UsuarioAPIController extends AppBaseController
 
     /**
      * Display the specified Usuario.
-     * GET|HEAD /usuarios/{id}
+     * GET|HEAD /usuarios/{id}.
      *
      * @param int $id
      *
@@ -82,7 +80,7 @@ class UsuarioAPIController extends AppBaseController
 
     /**
      * Update the specified Usuario in storage.
-     * PUT/PATCH /usuarios/{id}
+     * PUT/PATCH /usuarios/{id}.
      *
      * @param int $id
      * @param UpdateUsuarioAPIRequest $request
@@ -107,7 +105,7 @@ class UsuarioAPIController extends AppBaseController
 
     /**
      * Remove the specified Usuario from storage.
-     * DELETE /usuarios/{id}
+     * DELETE /usuarios/{id}.
      *
      * @param int $id
      *

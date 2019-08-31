@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\UsuarioDataTable;
+use Flash;
+use Response;
 use App\Http\Requests;
+use App\DataTables\UsuarioDataTable;
+use App\Repositories\UsuarioRepository;
+use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreateUsuarioRequest;
 use App\Http\Requests\UpdateUsuarioRequest;
-use App\Repositories\UsuarioRepository;
-use Flash;
-use App\Http\Controllers\AppBaseController;
-use Response;
 
 class UsuarioController extends AppBaseController
 {
-    /** @var  UsuarioRepository */
+    /** @var UsuarioRepository */
     private $usuarioRepository;
 
     public function __construct(UsuarioRepository $usuarioRepo)
