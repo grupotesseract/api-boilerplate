@@ -8,12 +8,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Usuario
  * @package App\Models
- * @version August 30, 2019, 8:09 pm -03
+ * @version August 30, 2019, 9:33 pm -03
  *
- * @property string name
+ * @property \App\Models\Cidade cidade
+ * @property string nome
  * @property string email
  * @property string|\Carbon\Carbon email_verified_at
  * @property string password
+ * @property string telefone
+ * @property string endereco
+ * @property integer cidade_id
  * @property string remember_token
  */
 class Usuario extends Authenticatable
@@ -32,6 +36,9 @@ class Usuario extends Authenticatable
         'email',
         'email_verified_at',
         'password',
+        'telefone',
+        'endereco',
+        'cidade_id',
         'remember_token'
     ];
 
@@ -46,6 +53,9 @@ class Usuario extends Authenticatable
         'email' => 'string',
         'email_verified_at' => 'datetime',
         'password' => 'string',
+        'telefone' => 'string',
+        'endereco' => 'string',
+        'cidade_id' => 'integer',
         'remember_token' => 'string'
     ];
 
@@ -55,10 +65,16 @@ class Usuario extends Authenticatable
      * @var array
      */
     public static $rules = [
-        'nome' => 'required|string|max:255',
-        'email' => 'required|string|email|max:255|unique:usuarios',
-        'password' => 'required|string|min:6|confirmed',
+        'nome' => 'required',
+        'email' => 'required|email|unique:usuarios',
+        'password' => 'required'
     ];
 
-
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     **/
+    public function cidade()
+    {
+        return $this->belongsTo(\App\Models\Cidade::class, 'cidade_id');
+    }
 }
