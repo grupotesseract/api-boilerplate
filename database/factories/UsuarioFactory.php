@@ -9,15 +9,11 @@ $factory->define(Usuario::class, function (Faker $faker) {
 
     return [
         'nome' => $faker->word,
-        'email' => $faker->word,
-        'email_verified_at' => $faker->date('Y-m-d H:i:s'),
-        'password' => $faker->word,
-        'deleted_at' => $faker->date('Y-m-d H:i:s'),
-        'telefone' => $faker->word,
-        'endereco' => $faker->word,
-        'cidade_id' => $faker->randomDigitNotNull,
-        'remember_token' => $faker->word,
-        'created_at' => $faker->date('Y-m-d H:i:s'),
-        'updated_at' => $faker->date('Y-m-d H:i:s')
+        'email' => $faker->unique()->safeEmail,
+        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+        'telefone' => $faker->phoneNumber,
+        'endereco' => $faker->streetAddress,
+        'email_verified_at' => now(),
+        'remember_token' => Str::random(10),
     ];
 });

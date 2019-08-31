@@ -16,9 +16,9 @@ class CidadeController extends AppBaseController
     }
 
     /**
-     * undocumented function
+     * Metodo para retornar as cidades de um estado
      *
-     * @return void
+     * @return JSON
      */
     public function getPorEstado($estadoId)
     {

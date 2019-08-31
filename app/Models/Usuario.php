@@ -81,13 +81,4 @@ class Usuario extends Authenticatable
         return $this->belongsTo(\App\Models\Cidade::class, 'cidade_id');
     }
 
-    /**
-     * Mutator para encryptar o password.
-     *
-     * @param mixed $value
-     */
-    public function setPasswordAttribute($value)
-    {
-        $this->attributes['password'] = bcrypt($value);
-    }
 }
