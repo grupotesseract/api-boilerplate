@@ -67,6 +67,12 @@ class Usuario extends Authenticatable
         'password' => 'required'
     ];
 
+    protected $hidden = [
+        'password',
+        'email_verified_at',
+        'remember_token'
+    ];
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      **/
