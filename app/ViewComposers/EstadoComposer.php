@@ -10,7 +10,7 @@ class EstadoComposer
     protected $estadoRepository;
 
     /**
-     * __construct
+     * __construct.
      *
      * @param EstadoRepository $estadoRepository
      */

@@ -6,11 +6,9 @@ use App\Models\Cidade;
 use App\Repositories\BaseRepository;
 
 /**
- * Class CidadeRepository
- * @package App\Repositories
+ * Class CidadeRepository.
  * @version August 30, 2019, 9:38 pm -03
-*/
-
+ */
 class CidadeRepository extends BaseRepository
 {
     /**
@@ -21,7 +19,7 @@ class CidadeRepository extends BaseRepository
     ];
 
     /**
-     * Return searchable fields
+     * Return searchable fields.
      *
      * @return array
      */
@@ -31,7 +29,7 @@ class CidadeRepository extends BaseRepository
     }
 
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {
@@ -39,13 +37,13 @@ class CidadeRepository extends BaseRepository
     }
 
     /**
-     * Retorna um array de Cidades no formato [id => 'nome']
+     * Retorna um array de Cidades no formato [id => 'nome'].
      *
      * @param mixed $estadoId - Para obter o array de cidades de 1 estado.
      *
      * @return array
      */
-    public function getArrayParaSelect($estadoId=null)
+    public function getArrayParaSelect($estadoId = null)
     {
         //Se vier estadoId, filtrar antes do pluck
         if ($estadoId) {
@@ -59,5 +57,4 @@ class CidadeRepository extends BaseRepository
             ::pluck('nome', 'id')
             ->all();
     }
-
 }

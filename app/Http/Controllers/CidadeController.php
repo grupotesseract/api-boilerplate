@@ -7,7 +7,7 @@ use App\Http\Controllers\AppBaseController;
 
 class CidadeController extends AppBaseController
 {
-    /** @var  CidadeRepository */
+    /** @var CidadeRepository */
     private $cidadeRepository;
 
     public function __construct(CidadeRepository $cidadeRepo)
@@ -16,15 +16,14 @@ class CidadeController extends AppBaseController
     }
 
     /**
-     * undocumented function
+     * undocumented function.
      *
      * @return void
      */
     public function getPorEstado($estadoId)
     {
         $cidades = $this->cidadeRepository->getArrayParaSelect($estadoId);
+
         return $this->sendResponse($cidades, 'Cidades por estado');
     }
-
-
 }
