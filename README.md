@@ -1,4 +1,4 @@
-<h1 align="center">Fibra API</h1>
+<h1 align="center">API Boilerplate</h1>
 
 <p align="center">
   Criado com muito ☕ por <a href="https://grupotesseract.com.br">Grupo Tesseract</a><br>
@@ -19,8 +19,8 @@
 ## Instalação
 
 ``` sh
-git clone https://github.com/grupotesseract/fibra-api
-cd fibra-api
+git clone https://github.com/grupotesseract/api-boilerplate
+cd api-boilerplate
 
 cp .env.example .env
 ./vessel start
