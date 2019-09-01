@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use Laratrust\Traits\LaratrustUserTrait;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Laratrust\Traits\LaratrustUserTrait;
 
 /**
  * Class Usuario.
