@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laratrust\Traits\LaratrustUserTrait;
 
 /**
  * Class Usuario.
@@ -21,6 +22,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  */
 class Usuario extends Authenticatable
 {
+    use LaratrustUserTrait;
     use SoftDeletes;
 
     public $table = 'usuarios';

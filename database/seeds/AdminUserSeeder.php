@@ -18,5 +18,6 @@ class AdminUserSeeder extends Seeder
             'nome' => 'Admin Tesseract',
             ]
         );
+        $userAdmin->attachRole(\App\Models\Role::ROLE_ADMIN);
     }
 }
