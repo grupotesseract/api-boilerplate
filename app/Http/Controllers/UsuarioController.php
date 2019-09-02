@@ -52,6 +52,7 @@ class UsuarioController extends AppBaseController
     public function store(CreateUsuarioRequest $request)
     {
         $input = $request->all();
+        $input['password'] = bcrypt($request->password);
 
         $usuario = $this->usuarioRepository->create($input);
 
@@ -111,6 +112,8 @@ class UsuarioController extends AppBaseController
     public function update($id, UpdateUsuarioRequest $request)
     {
         $usuario = $this->usuarioRepository->find($id);
+        $input = $request->all();
+        $input['password'] = bcrypt($request->password);
 
         if (empty($usuario)) {
             Flash::error('Usuário não encontrado');
@@ -118,7 +121,7 @@ class UsuarioController extends AppBaseController
             return redirect(route('usuarios.index'));
         }
 
-        $usuario = $this->usuarioRepository->update($request->all(), $id);
+        $usuario = $this->usuarioRepository->update($input, $id);
 
         Flash::success('Usuario atualizado com sucesso.');
 

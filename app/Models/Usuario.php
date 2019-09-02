@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Laravel\Passport\HasApiTokens;
+use Laratrust\Traits\LaratrustUserTrait;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -21,7 +23,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  */
 class Usuario extends Authenticatable
 {
-    use SoftDeletes;
+    use LaratrustUserTrait, HasApiTokens, SoftDeletes;
 
     public $table = 'usuarios';
 
