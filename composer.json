@@ -16,9 +16,11 @@
         "infyomlabs/laravel-generator": "5.8.x-dev",
         "infyomlabs/swagger-generator": "dev-master",
         "laravel/framework": "5.8.*",
+        "laravel/passport": "^7.4",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8.0",
         "predis/predis": "^1.1",
+        "santigarcor/laratrust": "^5.2",
         "shipping-docker/vessel": "^4.0",
         "yajra/laravel-datatables-buttons": "^4.6",
         "yajra/laravel-datatables-oracle": "~9.0"

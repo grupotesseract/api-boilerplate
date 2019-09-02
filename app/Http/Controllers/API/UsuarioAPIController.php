@@ -126,4 +126,49 @@ class UsuarioAPIController extends AppBaseController
 
         return $this->sendResponse($id, 'Usuario deleted successfully');
     }
+
+    /**
+     * Autenticação via API.
+     *
+     * @return \Illuminate\Http\Response
+     * @return Response
+     */
+    public function login(Request $request)
+    {
+        $usuario = $this->usuarioRepository->findByField('email', $request->email)->first();
+
+        if ($usuario) {
+            $token = $this->usuarioRepository->login($usuario, $request);
+            if ($token) {
+                return $this->sendResponse(
+                    [
+                        'usuario' => $usuario->toArray(),
+                        'token' => $token,
+                    ],
+                    'Usuário autenticou via API com Sucesso'
+                );
+            } else {
+                return $this->sendError('A senha digitada está incorreta');
+            }
+        } else {
+            return $this->sendError('Usuário inexistente');
+        }
+    }
+
+    /**
+     * Metodo para retornar o usuário logado a partir do token.
+     *
+     * @return JSON
+     */
+    public function showAuthenticated()
+    {
+        /** @var Usuario $usuario */
+        $usuario = \Auth::user();
+
+        if (empty($usuario)) {
+            return $this->sendError('Usuario not found');
+        }
+
+        return $this->sendResponse($usuario->toArray(), 'Usuario retrieved successfully');
+    }
 }
