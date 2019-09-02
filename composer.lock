@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3c11eab4a37404781fa67c150449988",
+    "content-hash": "0a8f4b2848401fd60963405711760c78",
     "packages": [
         {
             "name": "appointer/swaggervel",
@@ -1268,6 +1268,51 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "kkszymanowski/traitor",
+            "version": "0.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KKSzymanowski/Traitor.git",
+                "reference": "9770fc7de72ff585601dc9c42b31715d9fc40a24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KKSzymanowski/Traitor/zipball/9770fc7de72ff585601dc9c42b31715d9fc40a24",
+                "reference": "9770fc7de72ff585601dc9c42b31715d9fc40a24",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^1.0|^2.0|^3.0|^4.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Traitor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kuba Szymanowski",
+                    "email": "kuba.szymanowski@inf24.pl"
+                }
+            ],
+            "description": "Add a trait use statement to existing PHP class",
+            "keywords": [
+                "add",
+                "php",
+                "trait"
+            ],
+            "time": "2018-04-19T12:24:36+00:00"
+        },
+        {
             "name": "laracasts/flash",
             "version": "3.0.2",
             "source": {
@@ -2249,16 +2294,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.23.1",
+            "version": "2.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02"
+                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/767617a047e5b8b8b3b0b6023a2650847ed7df02",
-                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/934459c5ac0658bc765ad1e53512c7c77adcac29",
+                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
                 "shasum": ""
             },
             "require": {
@@ -2312,20 +2357,20 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-17T13:57:34+00:00"
+            "time": "2019-08-31T16:37:55+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8"
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e612609022e935f3d0337c1295176505b41188c8",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/97e59c7a16464196a8b9c77c47df68e4a39a45c4",
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4",
                 "shasum": ""
             },
             "require": {
@@ -2363,7 +2408,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-08-12T20:17:41+00:00"
+            "time": "2019-09-01T07:51:21+00:00"
         },
         {
             "name": "opis/closure",
@@ -3302,6 +3347,71 @@
             "time": "2018-07-19T23:38:55+00:00"
         },
         {
+            "name": "santigarcor/laratrust",
+            "version": "5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/santigarcor/laratrust.git",
+                "reference": "f9a703639cdde914bdb99499ce2d3bef5070812f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/santigarcor/laratrust/zipball/f9a703639cdde914bdb99499ce2d3bef5070812f",
+                "reference": "f9a703639cdde914bdb99499ce2d3bef5070812f",
+                "shasum": ""
+            },
+            "require": {
+                "kkszymanowski/traitor": "^0.2.0",
+                "laravel/framework": "~5.6.0|~5.7.0|~5.8.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.9",
+                "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0",
+                "phpunit/phpunit": ">=4.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laratrust\\LaratrustServiceProvider"
+                    ],
+                    "aliases": {
+                        "Laratrust": "Laratrust\\LaratrustFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laratrust\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Santiago Garcia",
+                    "homepage": "http://santigarcor.me"
+                }
+            ],
+            "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
+            "keywords": [
+                "Teams",
+                "acl",
+                "authorization",
+                "laratrust",
+                "laravel",
+                "multiusers",
+                "permissions",
+                "php",
+                "rbac",
+                "roles"
+            ],
+            "time": "2019-05-15T18:20:11+00:00"
+        },
+        {
             "name": "shipping-docker/vessel",
             "version": "4.0.1",
             "source": {
@@ -3343,16 +3453,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.23.6",
+            "version": "v3.23.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "5e454feb332edeac712f69c7ecb5937512acc2fc"
+                "reference": "7b737f607fbd0db9f43671ce7ffc0dc7e7e75a4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/5e454feb332edeac712f69c7ecb5937512acc2fc",
-                "reference": "5e454feb332edeac712f69c7ecb5937512acc2fc",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/7b737f607fbd0db9f43671ce7ffc0dc7e7e75a4f",
+                "reference": "7b737f607fbd0db9f43671ce7ffc0dc7e7e75a4f",
                 "shasum": ""
             },
             "type": "library",
@@ -3396,7 +3506,7 @@
                 "swagger",
                 "ui"
             ],
-            "time": "2019-08-24T02:30:24+00:00"
+            "time": "2019-09-01T01:02:50+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5005,16 +5115,16 @@
         },
         {
             "name": "yajra/laravel-datatables-html",
-            "version": "v4.7.0",
+            "version": "v4.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables-html.git",
-                "reference": "7883175ec89b20ddd550e79ac180746955e5d5d3"
+                "reference": "9d09be8200af1aa32ebeb4f394a93c187351029b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/7883175ec89b20ddd550e79ac180746955e5d5d3",
-                "reference": "7883175ec89b20ddd550e79ac180746955e5d5d3",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/9d09be8200af1aa32ebeb4f394a93c187351029b",
+                "reference": "9d09be8200af1aa32ebeb4f394a93c187351029b",
                 "shasum": ""
             },
             "require": {
@@ -5061,20 +5171,20 @@
                 "jquery",
                 "laravel"
             ],
-            "time": "2019-08-29T06:42:57+00:00"
+            "time": "2019-08-31T07:23:20+00:00"
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v9.4.1",
+            "version": "v9.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "ac37f93026b6b607d1bb56789d147a4efd8d97d9"
+                "reference": "4af0c9fcdc57734859ff418eb0474e44f2c807e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/ac37f93026b6b607d1bb56789d147a4efd8d97d9",
-                "reference": "ac37f93026b6b607d1bb56789d147a4efd8d97d9",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/4af0c9fcdc57734859ff418eb0474e44f2c807e6",
+                "reference": "4af0c9fcdc57734859ff418eb0474e44f2c807e6",
                 "shasum": ""
             },
             "require": {
@@ -5132,7 +5242,7 @@
                 "jquery",
                 "laravel"
             ],
-            "time": "2019-06-12T05:06:59+00:00"
+            "time": "2019-08-31T00:54:20+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
