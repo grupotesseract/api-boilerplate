@@ -26,6 +26,7 @@ RUN echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu bionic main" > /etc/apt
     php7.3-pgsql \
     php7.3-sqlite3 \
     php7.3-gd \
+    php7.3-gmp \
     php7.3-curl \
     php7.3-memcached \
     php7.3-imap \
