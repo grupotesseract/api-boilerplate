@@ -1,8 +1,7 @@
 <?php
 
+use App\Models\Cidade;
 use Illuminate\Database\Seeder;
-
-use \App\Models\Cidade;
 
 class AdminUserSeeder extends Seeder
 {
@@ -17,7 +16,7 @@ class AdminUserSeeder extends Seeder
             'email' => env('ADMIN_EMAIL', 'admin@grupotesseract.com.br'),
             'password' => bcrypt(env('ADMIN_PASSWORD', '12344321')),
             'nome' => 'Admin Tesseract',
-            'cidade_id' => Cidade::where('nome', 'Bauru')->first()->id
+            'cidade_id' => Cidade::where('nome', 'Bauru')->first()->id,
         ]);
         $userAdmin->attachRole(\App\Models\Role::ROLE_ADMIN);
     }
