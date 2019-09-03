@@ -1,30 +1,30 @@
 <!-- Nome Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('nome', 'Nome:') !!}
+    {!! Form::label('nome', 'Nome') !!}
     {!! Form::text('nome', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Email Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('email', 'Email:') !!}
+    {!! Form::label('email', 'E-mail') !!}
     {!! Form::text('email', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Password Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('password', 'Password:') !!}
+    {!! Form::label('password', 'Senha') !!}
     {!! Form::password('password', ['class' => 'form-control']) !!}
 </div>
 
 <!-- Telefone Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('telefone', 'Telefone:') !!}
+    {!! Form::label('telefone', 'Telefone') !!}
     {!! Form::text('telefone', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Endereco Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('endereco', 'Endereco:') !!}
+    {!! Form::label('endereco', 'Endereço') !!}
     {!! Form::text('endereco', null, ['class' => 'form-control']) !!}
 </div>
 
@@ -51,7 +51,6 @@
     </div>
 
 @endif
-
 
 
 <!-- Submit Field -->
