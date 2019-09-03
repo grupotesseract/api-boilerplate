@@ -11,13 +11,11 @@ class AdminUserSeeder extends Seeder
      */
     public function run()
     {
-        $userAdmin = factory(\App\Models\Usuario::class)->create(
-            [
-            'email' => env('ADMIN_EMAIL', 'admin@tesseract.com'),
+        $userAdmin = factory(\App\Models\Usuario::class)->create([
+            'email' => env('ADMIN_EMAIL', 'admin@grupotesseract.com.br'),
             'password' => bcrypt(env('ADMIN_PASSWORD', '12344321')),
             'nome' => 'Admin Tesseract',
-            ]
-        );
+        ]);
         $userAdmin->attachRole(\App\Models\Role::ROLE_ADMIN);
     }
 }
