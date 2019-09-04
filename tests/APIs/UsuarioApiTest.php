@@ -26,5 +26,4 @@ class UsuarioApiTest extends TestCase
 
         $this->assertApiResponse($usuario->toArray());
     }
-    
 }
