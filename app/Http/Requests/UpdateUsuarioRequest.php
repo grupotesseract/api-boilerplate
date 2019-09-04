@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Models\Usuario;
+use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateUsuarioRequest extends FormRequest
@@ -24,6 +25,13 @@ class UpdateUsuarioRequest extends FormRequest
      */
     public function rules()
     {
-        return Usuario::$rules;
+        $rules = [
+            'email' => [
+                'required',
+                Rule::unique('usuarios')->ignore($this->route('usuario')),
+            ],
+        ];
+
+        return $rules;
     }
 }
