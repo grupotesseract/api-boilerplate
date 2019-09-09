@@ -32,6 +32,21 @@ cp .env.example .env
 ./vessel yarn watch
 ```
 
+## Comando para gerar um CRUD
+- Criar model_schema na pasta database/model_schemas referente a entidade desejada
+- Importante rodar o comando abaixo ao gerar algum CRUD, para gerar factories, seeds, e deixar os nomes das rotas e views semânticos de acordo com o plural
+
+```
+php artisan infyom:api_scaffold TipoMaterial --tableName=tipos_materiais --fieldsFile=TipoMaterial.json --datatables=true --factory --seeder --plural=TiposMateriais
+```
+
+## Testes
+- Para rodar os testes, executar
+
+```
+./vessel exec app vendor/bin/phpunit tests
+```
+
 ## Deploy
 
 > Em breve...
