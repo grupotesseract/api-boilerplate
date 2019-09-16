@@ -5,7 +5,7 @@ WORKDIR /var/www/html
 RUN useradd -ms /bin/bash -u 1337 vessel \
   && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
   && apt-get update \
-  && apt-get install -y gnupg gosu \
+  && apt-get install -y --no-install-recommends gnupg gosu \
   && gosu nobody true \
   && echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu bionic main" \
     > /etc/apt/sources.list.d/ppa_ondrej_php.list \
@@ -16,7 +16,7 @@ RUN useradd -ms /bin/bash -u 1337 vessel \
   && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C300EE8C \
   && apt-get update
 
-RUN apt-get install -y \
+RUN apt-get install -y --no-install-recommends \
     curl \
     libssl1.0-dev \
     nginx \
