@@ -68,10 +68,10 @@ v art \
 
 ### Testes
 
-Para rodar os testes, executar
+Para rodar os testes, executar:
 
 ``` sh
-v exec app vendor/bin/phpunit tests
+v test tests
 ```
 
 ### Deploy

@@ -238,7 +238,7 @@ if [ $# -gt 0 ]; then
     # from our node container
     elif [ "$1" == "yarn" ]; then
         shift 1
-        $COMPOSE run --rm \
+        $COMPOSE run \
             node \
             yarn "$@"
 
