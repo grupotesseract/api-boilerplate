@@ -1,25 +1,25 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
+const sassOptions = { outputStyle: 'compressed' }
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
+mix.js('resources/js/App.js', 'public/js')
+  .js('resources/js/pages/Home.js', 'public/js')
+  .js('resources/js/pages/Cidades.js', 'public/js')
 
-mix.js('resources/js/app.js', 'public/js')
-  .js('resources/js/ajax-cidades.js', 'public/js')
-  .sass('resources/sass/app.scss', 'public/css')
+  .sass('resources/sass/app.scss', 'public/css', { sassOptions })
+  .sass('resources/sass/pages/login.scss', 'public/css', { sassOptions })
+  .sass('resources/sass/pages/welcome.scss', 'public/css', { sassOptions })
+
   .browserSync({
-    proxy: 'localhost',
+    files: ['public/css/*.css', 'public/js/*.js'],
+    logSnippet: false,
+    ghostMode: false,
+    notify: false,
     open: false,
+    port: 3000,
+    proxy: '',
     ui: false
-  });
+  })
 
-if (!mix.inProduction()) {
-  mix.webpackConfig({ devtool: 'inline-source-map' });
-}
+  .webpackConfig({
+    devtool: !mix.inProduction() && 'inline-source-map'
+  })

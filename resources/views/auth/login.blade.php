@@ -10,18 +10,31 @@
     <meta name="description" content="CoreUI Template - InfyOm Laravel Generator">
     <meta name="keyword" content="CoreUI,Bootstrap,Admin,Template,InfyOm,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> --}}
     <!-- Theme style -->
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ config('app.name') }} | Login</title>
+
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
-    <link rel="shortcut icon"
-        href="https://res.cloudinary.com/tesseract/image/upload/c_fill,co_rgb:424242,h_16,w_16/v1567191507/grupo-tesseract/logo-tesseract-cubo-branco-borda_favicon.ico"
-        type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/login.css" />
 </head>
 
 <body class="app flex-row align-items-center">
@@ -67,13 +80,8 @@
                                     @endif
                                 </div>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-12 text-right">
                                         <button class="btn btn-primary px-4" type="submit">Login</button>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <a class="btn btn-link px-0" href="{{ url('/password/reset') }}">
-                                            Esqueceu a senha?
-                                        </a>
                                     </div>
                                 </div>
                             </form>
@@ -83,12 +91,14 @@
             </div>
         </div>
     </div>
+
     <!-- CoreUI and necessary plugins-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script>
+
     <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.7"></script>
 </body>
 

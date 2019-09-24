@@ -20,5 +20,5 @@
 @endif
 
 @section('scripts')
-    <script src="/js/ajax-cidades.js"></script>
+    <script src="/js/pages/cidades.js"></script>
 @endsection
