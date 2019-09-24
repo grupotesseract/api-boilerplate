@@ -1,72 +1,48 @@
-<!-- Id Field -->
-<div class="form-group">
-    {!! Form::label('id', 'Id:') !!}
-    <p>{!! $usuario->id !!}</p>
-</div>
-
 <!-- Nome Field -->
 <div class="form-group">
-    {!! Form::label('nome', 'Nome:') !!}
+    {!! Form::label('nome', 'Nome') !!}
     <p>{!! $usuario->nome !!}</p>
 </div>
 
 <!-- Email Field -->
 <div class="form-group">
-    {!! Form::label('email', 'Email:') !!}
+    {!! Form::label('email', 'E-mail') !!}
     <p>{!! $usuario->email !!}</p>
-</div>
-
-<!-- Email Verified At Field -->
-<div class="form-group">
-    {!! Form::label('email_verified_at', 'Email Verified At:') !!}
-    <p>{!! $usuario->email_verified_at !!}</p>
-</div>
-
-<!-- Password Field -->
-<div class="form-group">
-    {!! Form::label('password', 'Password:') !!}
-    <p>{!! $usuario->password !!}</p>
-</div>
-
-<!-- Deleted At Field -->
-<div class="form-group">
-    {!! Form::label('deleted_at', 'Deleted At:') !!}
-    <p>{!! $usuario->deleted_at !!}</p>
 </div>
 
 <!-- Telefone Field -->
 <div class="form-group">
-    {!! Form::label('telefone', 'Telefone:') !!}
+    {!! Form::label('telefone', 'Telefone') !!}
     <p>{!! $usuario->telefone !!}</p>
 </div>
 
 <!-- Endereco Field -->
 <div class="form-group">
-    {!! Form::label('endereco', 'Endereco:') !!}
+    {!! Form::label('endereco', 'Endereço') !!}
     <p>{!! $usuario->endereco !!}</p>
 </div>
 
 <!-- Cidade Id Field -->
 <div class="form-group">
-    {!! Form::label('cidade_id', 'Cidade Id:') !!}
-    <p>{!! $usuario->cidade_id !!}</p>
+    {!! Form::label('cidade_id', 'Cidade') !!}
+    <p>{!! $usuario->cidade->nome !!}</p>
 </div>
 
-<!-- Remember Token Field -->
+<!-- Cidade Id Field -->
 <div class="form-group">
-    {!! Form::label('remember_token', 'Remember Token:') !!}
-    <p>{!! $usuario->remember_token !!}</p>
+    {!! Form::label('estado_id', 'Estado') !!}
+    <p>{!! $usuario->cidade->estado->nome !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Criado em') !!}
     <p>{!! $usuario->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Atualizado em') !!}
     <p>{!! $usuario->updated_at !!}</p>
 </div>
 

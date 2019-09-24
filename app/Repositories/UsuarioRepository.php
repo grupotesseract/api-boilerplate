@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\Models\Usuario;
 use App\Repositories\BaseRepository;
+use Illuminate\Support\Facades\Hash;
 
 /**
  * Class UsuarioRepository.
@@ -41,5 +42,23 @@ class UsuarioRepository extends BaseRepository
     public function model()
     {
         return Usuario::class;
+    }
+
+    /**
+     * Autenticação via API.
+     *
+     * @return \Illuminate\Http\Response
+     * @return Response
+     */
+    public function login($usuario, $request)
+    {
+        if (Hash::check($request->password, $usuario->password)) {
+            $token = $usuario->createToken(env('PASSPORT_CLIENT', 'Laravel Password Grant Client'))->accessToken;
+            $response = ['token' => $token];
+
+            return $response;
+        } else {
+            return false;
+        }
     }
 }
