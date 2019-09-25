@@ -11,3 +11,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN usermod -u $uid node
+
+EXPOSE 3000
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]

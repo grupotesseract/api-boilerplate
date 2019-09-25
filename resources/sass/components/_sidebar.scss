@@ -1,0 +1,23 @@
+.sidebar {
+  background-image: linear-gradient(to right bottom, #1f2224, #292c2f, #34373a, #3f4245, #4b4e51);
+
+  .nav {
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    i {
+      font-size: 12px;
+      opacity: 0.75;
+      width: 20px;
+    }
+
+    &.active {
+      background-color: rgba(76,90,103,0.5);
+    }
+
+    &:hover {
+      background-color: rgba(255,255,255,0.075);
+    }
+  }
+}

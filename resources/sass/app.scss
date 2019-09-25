@@ -1,8 +1,14 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import 'global/variables';
+@import 'global/typography';
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/breadcrumb';
+@import 'components/tables';
 
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.app-body {
+  .main {
+    background-image: url('https://res.cloudinary.com/tesseract/image/upload/co_rgb:ffffff,e_grayscale,o_4/v1568214892/fibra-api/logo_transparente.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

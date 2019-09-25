@@ -7,6 +7,7 @@
         </li>
         <li class="breadcrumb-item active">Editar</li>
     </ol>
+
     <div class="container-fluid">
         <div class="animated fadeIn">
             @include('coreui-templates::common.errors')
