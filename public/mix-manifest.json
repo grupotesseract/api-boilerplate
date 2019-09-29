@@ -2,7 +2,7 @@
     "/js/App.js": "/js/App.js",
     "/css/app.css": "/css/app.css",
     "/css/login.css": "/css/login.css",
+    "/css/welcome.css": "/css/welcome.css",
     "/js/Cidades.js": "/js/Cidades.js",
-    "/js/Home.js": "/js/Home.js",
-    "/css/welcome.css": "/css/welcome.css"
+    "/js/Home.js": "/js/Home.js"
 }
