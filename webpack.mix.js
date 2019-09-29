@@ -10,13 +10,13 @@ mix.js('resources/js/App.js', 'public/js')
   .sass('resources/sass/pages/welcome.scss', 'public/css', { sassOptions })
 
   .browserSync({
-    files: ['public/css/*.css', 'public/js/*.js'],
+    files: ['public/css/*.{css,js}'],
+    proxy: 'localhost',
     logSnippet: false,
     ghostMode: false,
     notify: false,
     open: false,
     port: 3000,
-    proxy: '',
     ui: false
   })
 
