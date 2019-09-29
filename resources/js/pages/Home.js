@@ -17,7 +17,7 @@ class Home {
    *
    */
   init() {
-    console.log('HOME');
+    console.log('HOME')
   }
 
 }

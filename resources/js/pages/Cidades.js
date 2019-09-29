@@ -1,22 +1,19 @@
-import Axios from 'axios';
+import Axios from 'axios'
 
 /**
- *
- *
- * @class App
+ * @class Cidades
  */
 class Cidades {
 
   /**
-   *Creates an instance of App.
+   * @constructor
    */
   constructor() {
     this.eventHandlers()
   }
 
   /**
-   *
-   *
+   * @returns
    */
   eventHandlers() {
     $('.select-estados').on('change', async event => {
