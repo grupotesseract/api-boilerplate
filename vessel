@@ -242,6 +242,12 @@ if [ $# -gt 0 ]; then
             node \
             yarn "$@"
 
+    elif [ "$1" == "y" ]; then
+        shift 1
+        $COMPOSE exec \
+            node \
+            yarn "$@"
+
     # If "gulp" is used, run gulp
     # from our node container
     elif [ "$1" == "gulp" ]; then
