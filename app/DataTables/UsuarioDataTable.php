@@ -46,7 +46,7 @@ class UsuarioDataTable extends DataTable
                 'width' => '120px',
                 'class' => 'text-center',
                 'printable' => false,
-                'title' => 'Ações'
+                'title' => 'Ações',
             ])
             ->parameters(
                 [
