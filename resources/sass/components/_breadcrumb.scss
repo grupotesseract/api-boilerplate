@@ -1,4 +1,9 @@
 .breadcrumb {
-  padding: 0.45rem 1rem;
-  font-size: 12px;
+  font-size: 11px;
+  margin-bottom: 0;
+  border-bottom: 0;
+
+  &-item.active {
+    opacity: 0.5;
+  }
 }
