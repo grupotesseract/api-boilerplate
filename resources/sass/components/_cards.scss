@@ -1,0 +1,13 @@
+.card {
+  background-color: #ffffff85;
+
+  &-body {
+    overflow: hidden;
+  }
+
+  &-header {
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+  }
+}
