@@ -1,0 +1,32 @@
+body {
+  background-color: #fff;
+  background-image: linear-gradient(to right bottom, #ffffff, #f6f6f6, #eeeeee, #e5e5e5, #dddddd);
+}
+
+.app-body {
+  .main {
+    background-image: url('https://res.cloudinary.com/tesseract/image/upload/co_rgb:ffffff,e_grayscale,o_4/v1568214892/fibra-api/logo_transparente.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: $blue;
+  transition: color ease 0.25s;
+
+  &:hover {
+    color: lighten($blue, 10%);
+  }
+}
+
+.main .container-fluid {
+  padding: 30px;
+}
