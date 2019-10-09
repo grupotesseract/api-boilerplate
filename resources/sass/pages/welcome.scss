@@ -1,4 +1,5 @@
 @import '../global/variables';
+
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
@@ -6,11 +7,12 @@
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/utilities';
 @import '~bootstrap/scss/buttons';
-@import '../global/typography';
 
-html, body {
-  background-color: #fff;
-  background-image: linear-gradient(to right bottom, #ffffff, #f6f6f6, #eeeeee, #e5e5e5, #dddddd);
+@import '../global/typography';
+@import '../layout/scaffold';
+@import '../layout/images';
+
+body {
   color: #636b6f;
   font-weight: 300;
   height: 100vh;
@@ -22,32 +24,19 @@ html, body {
 }
 
 .flex-center {
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .content {
   text-align: center;
 }
 
-.links > a {
-  // color: #636b6f;
-  // font-size: 13px;
-  // font-weight: 600;
-  // letter-spacing: .05rem;
-  // text-decoration: none;
-  // text-transform: uppercase;
-}
-
 .slogan {
-  margin: 15px auto;
+  margin: 20px auto;
   font-size: 14px;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.025);
   opacity: 0.76;
-}
-
-.m-b-md {
-  margin-bottom: 30px;
 }

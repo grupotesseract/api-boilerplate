@@ -1,14 +1,18 @@
 @import 'global/variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+@import '~@coreui/coreui/scss/variables';
+@import "~@coreui/coreui/scss/mixins";
 @import 'global/typography';
+@import 'layout/scaffold';
+@import 'layout/images';
+@import 'components/buttons';
 @import 'components/header';
 @import 'components/sidebar';
 @import 'components/breadcrumb';
 @import 'components/tables';
-
-.app-body {
-  .main {
-    background-image: url('https://res.cloudinary.com/tesseract/image/upload/co_rgb:ffffff,e_grayscale,o_4/v1568214892/fibra-api/logo_transparente.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-}
+@import 'components/cards';
+@import 'components/pagination';
+@import 'components/datatables';
+@import 'components/dropdown';
