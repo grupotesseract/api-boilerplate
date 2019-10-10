@@ -2,9 +2,10 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Serviços Especializados de Engenharia Ltda." />
     <title>{{ config('app.name') }} | Serviços Especializados de Engenharia Ltda.</title>
 
     <!-- CSS -->
@@ -28,12 +29,14 @@
         @endif
 
         <div class="content">
-            <div class="title m-b-md">
-                <img src="https://res.cloudinary.com/tesseract/image/upload/v1568214892/fibra-api/logo_transparente.png" />
+            <div class="title">
+                <img class="logo" src="https://res.cloudinary.com/tesseract/image/upload/v1568214892/fibra-api/logo_transparente.png" />
+
+                <p class="slogan">Serviços Especializados de Engenharia Ltda.</p>
             </div>
 
             <div class="links">
-                <a href="{{ route('login') }}">Login</a>
+                <a class="btn btn-primary px-4" href="{{ route('login') }}">Login</a>
             </div>
         </div>
     </div>
