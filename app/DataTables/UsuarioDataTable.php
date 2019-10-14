@@ -60,7 +60,7 @@ class UsuarioDataTable extends DataTable
                         ['extend' => 'reload', 'text' => '<i class="fa fa-refresh"></i>', 'className' => 'btn btn-sm'],
                     ],
                     'language' => [
-                        'url' => url('//cdn.datatables.net/plug-ins/1.10.18/i18n/Portuguese-Brasil.json'),
+                        'url' => url('https://cdn.datatables.net/plug-ins/1.10.20/i18n/Portuguese-Brasil.json'),
                     ],
                 ]
             );
