@@ -1,0 +1,57 @@
+.sidebar {
+  background-image: linear-gradient(-154deg, rgba(0,0,0,0) 0, #1f2224 100%);
+  box-shadow: 1px 0 4px rgba(0,0,0,0.25);
+
+  &::before {
+    content: '';
+    background-image: url(https://demos.creative-tim.com/light-bootstrap-dashboard/assets/img/sidebar-5.jpg);
+    background-size: cover;
+    opacity: 0.025;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .nav {
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    i {
+      font-size: 12px;
+      opacity: 0.75;
+      width: 20px;
+    }
+
+    &.active {
+      background-color: rgba(76,90,103,0.5);
+    }
+
+    &:hover {
+      background-color: rgba(255,255,255,0.075);
+    }
+  }
+
+  footer {
+    font-size: 10px;
+    text-align: center;
+    padding: .75rem 1rem;
+
+    a {
+      color: #fff;
+      opacity: 0.2;
+      transition: opacity ease 0.25s;
+
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+
+    img {
+      width: 90px;
+      height: 27px;
+    }
+  }
+}

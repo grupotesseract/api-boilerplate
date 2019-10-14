@@ -222,7 +222,7 @@ if [ $# -gt 0 ]; then
     # from our node container
     elif [ "$1" == "node" ]; then
         shift 1
-        $COMPOSE run --rm \
+        $COMPOSE exec \
             node \
             node "$@"
 
@@ -230,7 +230,7 @@ if [ $# -gt 0 ]; then
     # from our node container
     elif [ "$1" == "npm" ]; then
         shift 1
-        $COMPOSE run --rm \
+        $COMPOSE exec \
             node \
             npm "$@"
 
@@ -238,7 +238,13 @@ if [ $# -gt 0 ]; then
     # from our node container
     elif [ "$1" == "yarn" ]; then
         shift 1
-        $COMPOSE run --rm \
+        $COMPOSE exec \
+            node \
+            yarn "$@"
+
+    elif [ "$1" == "y" ]; then
+        shift 1
+        $COMPOSE exec \
             node \
             yarn "$@"
 
@@ -246,7 +252,7 @@ if [ $# -gt 0 ]; then
     # from our node container
     elif [ "$1" == "gulp" ]; then
         shift 1
-        $COMPOSE run --rm \
+        $COMPOSE exec \
             node \
             ./node_modules/.bin/gulp "$@"
 

@@ -1,27 +1,35 @@
 @extends('layouts.app')
 
-@section('content')
+@section('breadcrumb')
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="{!! route('usuarios.index') !!}">Usuário</a>
+            <a href="/">
+                <i class="fa fa-home"></i>
+                Home
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{!! route('usuarios.index') !!}">
+                <i class="fa fa-users"></i>
+                Usuários
+            </a>
         </li>
         <li class="breadcrumb-item active">Editar</li>
     </ol>
+@endsection
+
+@section('content')
     <div class="container-fluid">
-        <div class="animated fadeIn">
-            @include('coreui-templates::common.errors')
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="fa fa-edit fa-lg"></i>
-                            <strong>Editar Usuário</strong>
-                        </div>
-                        <div class="card-body">
-                            {!! Form::model($usuario, ['route' => ['usuarios.update', $usuario->id], 'method' => 'patch']) !!}
-                                @include('usuarios.fields')
-                            {!! Form::close() !!}
-                        </div>
+        @include('coreui-templates::common.errors')
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">Editar Usuário</div>
+
+                    <div class="card-body">
+                        {!! Form::model($usuario, ['route' => ['usuarios.update', $usuario->id], 'method' => 'patch']) !!}
+                            @include('usuarios.fields')
+                        {!! Form::close() !!}
                     </div>
                 </div>
             </div>

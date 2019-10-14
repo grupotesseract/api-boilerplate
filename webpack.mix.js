@@ -1,20 +1,27 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
+const browserSyncFiles = ['public/css/*.{css,js}']
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
+mix.js('resources/js/App.js', 'public/js')
+  .js('resources/js/pages/Home.js', 'public/js/pages')
+  .js('resources/js/pages/Cidades.js', 'public/js/pages')
+  .js('resources/js/pages/Usuarios.js', 'public/js/pages')
 
-mix.js('resources/js/app.js', 'public/js')
-  .js('resources/js/ajax-cidades.js', 'public/js')
-  .sass('resources/sass/app.scss', 'public/css');
+  .sass('resources/sass/app.scss', 'public/css')
+  .sass('resources/sass/pages/login.scss', 'public/css/pages')
+  .sass('resources/sass/pages/welcome.scss', 'public/css/pages')
 
-if (!mix.inProduction()) {
-  mix.webpackConfig({ devtool: 'inline-source-map' });
-}
+  .browserSync({
+    files: !process.env.LIVERELOAD_PHP
+      ? browserSyncFiles
+      : ['{app,config,public,resources/views}/**/*.php', ...browserSyncFiles],
+    proxy: 'localhost',
+    logSnippet: false,
+    notify: false,
+    open: false,
+    port: 3000,
+    ui: false
+  })
+
+  .webpackConfig({
+    devtool: !mix.inProduction() && 'inline-source-map'
+  })

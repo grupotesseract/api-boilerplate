@@ -1,8 +1,23 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import 'global/variables';
 
-// Variables
-@import 'variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+@import '~@coreui/coreui/scss/variables';
+@import "~@coreui/coreui/scss/mixins";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import 'global/typography';
+@import 'layout/scaffold';
+@import 'layout/images';
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/breadcrumb';
+@import 'components/forms';
+@import 'components/tables';
+@import 'components/cards';
+@import 'components/pagination';
+@import 'components/datatables';
+@import 'components/dropdown';
+
+@import 'layout/mobile';

@@ -1,0 +1,42 @@
+@import '../global/variables';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/buttons';
+
+@import '../global/typography';
+@import '../layout/scaffold';
+@import '../layout/images';
+
+body {
+  color: #636b6f;
+  font-weight: 300;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.slogan {
+  margin: 20px auto;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.025);
+  opacity: 0.7;
+}

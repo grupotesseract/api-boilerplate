@@ -1,0 +1,13 @@
+.breadcrumb {
+  font-size: 11px;
+  margin-bottom: 0;
+  border-bottom: 0;
+
+  &-item.active {
+    opacity: 0.5;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
