@@ -1,6 +1,14 @@
 .app-header {
   .navbar-brand {
-    width: $sidebar-width;
+    @include media-breakpoint-up(lg) {
+      width: $sidebar-width;
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: initial;
+      margin-left: 5px;
+      width: auto;
+    }
   }
 
   .navbar-nav {
@@ -31,5 +39,10 @@
 
   .navbar-toggler {
     z-index: 1;
+
+    &:focus {
+      outline: none;
+
+    }
   }
 }

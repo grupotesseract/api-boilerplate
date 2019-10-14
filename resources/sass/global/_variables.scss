@@ -31,10 +31,10 @@ $blue:          #3f505f     !default;
 $indigo:        #6610f2     !default;
 $purple:        #6f42c1     !default;
 $pink:          #e83e8c     !default;
-$red:           #ee788a     !default;
-$orange:        #f8cb00     !default;
-$yellow:        #eee878     !default;
-$green:         #697A74     !default;
+$red:           #bf616a     !default;
+$orange:        #fd7e14     !default;
+$yellow:        #ebcb8b     !default;
+$green:         #a3be8c     !default;
 $teal:          #2e574e     !default;
 $cyan:          #17a2b8     !default;
 $light-blue:    #63c2de     !default;
@@ -83,3 +83,5 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+$yiq-contrasted-threshold: 250 !default;

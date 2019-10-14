@@ -1,4 +1,8 @@
 <header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
     <a class="navbar-brand" href="/home">
         <img class="navbar-brand-full logo"
             src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_36/v1568214892/fibra-api/logo_transparente.png"
