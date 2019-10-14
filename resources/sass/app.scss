@@ -1,9 +1,11 @@
 @import 'global/variables';
+
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/variables';
 @import '~@coreui/coreui/scss/variables';
 @import "~@coreui/coreui/scss/mixins";
+
 @import 'global/typography';
 @import 'layout/scaffold';
 @import 'layout/images';
@@ -11,8 +13,11 @@
 @import 'components/header';
 @import 'components/sidebar';
 @import 'components/breadcrumb';
+@import 'components/forms';
 @import 'components/tables';
 @import 'components/cards';
 @import 'components/pagination';
 @import 'components/datatables';
 @import 'components/dropdown';
+
+@import 'layout/mobile';
