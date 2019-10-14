@@ -9,7 +9,7 @@
     <title>{{ config('app.name') }} | Serviços Especializados de Engenharia Ltda.</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/welcome.css" />
+    <link rel="stylesheet" href="/css/pages/welcome.css" />
 </head>
 
 <body>
