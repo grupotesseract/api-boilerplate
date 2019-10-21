@@ -26,8 +26,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 ## Instalação
 
 ``` sh
-git clone https://github.com/grupotesseract/fibra-api
-cd fibra-api
+git clone https://github.com/grupotesseract/api-boilerplate
+cd api-boilerplate
 ```
 
 É altamente recomendada a criação do alias abaixo. Inclua no seu arquivo `~/.zshrc` ou `~/.bashrc`:

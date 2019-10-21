@@ -1,6 +1,6 @@
 {
-    "name": "grupotesseract/fibra-api",
-    "description": "API do projeto Fibra",
+    "name": "grupotesseract/api-boilerplate",
+    "description": "API Boilerplate do Grupo Tesseract",
     "type": "project",
     "keywords": [
         "framework",

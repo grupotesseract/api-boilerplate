@@ -1,6 +1,7 @@
 {
     "/js/App.js": "/js/App.js",
-    "/js/pages/Cidades.js": "/js/pages/Cidades.js",
-    "/js/pages/Home.js": "/js/pages/Home.js",
-    "/js/pages/Usuarios.js": "/js/pages/Usuarios.js"
+    "/css/app.css": "/css/app.css",
+    "/css/pages/login.css": "/css/pages/login.css",
+    "/css/pages/welcome.css": "/css/pages/welcome.css",
+    "/js/pages/Cidades.js": "/js/pages/Cidades.js"
 }
