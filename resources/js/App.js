@@ -18,18 +18,21 @@ class App {
    * @returns
    */
   eventHandlers() {
-    $('.select2').select2();
+    $(function () {
+      $('.select2').select2();
 
-    $('.datepicker').datetimepicker({
-      format: 'DD/MM/YYYY HH:mm:ss',
-      locale: 'pt-br',
-      useCurrent: true,
-      icons: {
-        up: "icon-arrow-up-circle icons font-2xl",
-        down: "icon-arrow-down-circle icons font-2xl"
-      },
-      sideBySide: true
-    })
+      $('.datepicker').datetimepicker({
+        format: 'DD/MM/YYYY HH:mm:ss',
+        locale: 'pt-br',
+        useCurrent: true,
+        icons: {
+          up: "icon-arrow-up-circle icons font-2xl",
+          down: "icon-arrow-down-circle icons font-2xl"
+        },
+        sideBySide: true
+      })
+
+    });
   }
 
 }

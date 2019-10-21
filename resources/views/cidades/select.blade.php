@@ -5,7 +5,7 @@
     <!-- Select de Cidades  -->
     <div class="form-group">
         {!! Form::label('cidades', 'Cidade') !!} <br>
-        {!! Form::select('cidade_id', $cidades, $Model->cidade->id, ['class' => 'form-control select-cidades select2']) !!}
+        {!! Form::select('cidade_id', [''=>'']+$cidades, $Model->cidade->id, ['class' => 'form-control select-cidades select2']) !!}
     </div>
 
 @else
