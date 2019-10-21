@@ -6,6 +6,9 @@
 @import '~@coreui/coreui/scss/variables';
 @import "~@coreui/coreui/scss/mixins";
 
+@import '~eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css';
+@import '~select2/dist/css/select2.css';
+
 @import 'global/typography';
 @import 'layout/scaffold';
 @import 'layout/images';

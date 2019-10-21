@@ -21,7 +21,7 @@ class Cidades {
       const ID = event.currentTarget.value;
       const result = await Axios.get(`/estados/${ID}/cidades`)
 
-      for (let [key, value] of Object.entries(result.data)) {
+      for (let [key, value] of Object.entries(result.data.data)) {
         content += `<option value="${key}">${value}</option>`;
       }
 
