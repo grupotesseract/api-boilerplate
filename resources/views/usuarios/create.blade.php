@@ -1,12 +1,5 @@
 @extends('layouts.app')
 
-@section('breadcrumb')
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="{!! route('usuarios.index') !!}">Usuário</a>
-        </li>
-        <li class="breadcrumb-item active">Criar</li>
-    </ol>
 @endsection
 
 @section('content')

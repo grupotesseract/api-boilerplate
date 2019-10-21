@@ -5,9 +5,9 @@
 
     <a class="navbar-brand" href="/home">
         <img class="navbar-brand-full logo"
-            src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_36/v1568214892/fibra-api/logo_transparente.png"
+            src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_40/v1567194453/grupo-tesseract/LOGO_PRETO_HORIZONTAL_SEM_FUNDO.png"
             height="36"
-            alt="Logo da Fibra" />
+            alt="Logo Grupo Tesseract" />
     </a>
 
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">

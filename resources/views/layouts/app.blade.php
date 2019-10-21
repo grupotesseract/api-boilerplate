@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }} | Serviços Especializados de Engenharia Ltda.</title>
-    <meta name="description" content="Serviços Especializados de Engenharia Ltda.">
+    <title>{{ config('app.name') }} | Tesseract API Boilerplate.</title>
+    <meta name="description" content="API Boilerplate do Grupo Tesseract.">
 
     <!-- CSS -->
     @include('layouts.css')

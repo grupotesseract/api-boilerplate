@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import 'bootstrap'
 import '@coreui/coreui'
 
@@ -27,4 +26,4 @@ class App {
 
 }
 
-export default App
+new App

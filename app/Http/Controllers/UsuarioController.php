@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Flash;
 use Response;
+use App\Http\Requests;
 use App\DataTables\UsuarioDataTable;
 use App\Repositories\UsuarioRepository;
 use App\Http\Controllers\AppBaseController;

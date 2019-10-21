@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Serviços Especializados de Engenharia Ltda." />
-    <title>{{ config('app.name') }} | Serviços Especializados de Engenharia Ltda.</title>
+    <meta name="description" content="Tesseract API Boilerplate." />
+    <title>{{ config('app.name') }} | Tesseract API Boilerplate.</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/pages/welcome.css" />
@@ -30,9 +30,9 @@
 
         <div class="content">
             <div class="title">
-                <img class="logo" src="https://res.cloudinary.com/tesseract/image/upload/v1568214892/fibra-api/logo_transparente.png" />
+                <img class="logo" src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_200/v1567190357/grupo-tesseract/logo-tesseract-completo-preto.png" />
 
-                <p class="slogan">Serviços Especializados de Engenharia Ltda.</p>
+                <p class="slogan">Laravel API Boilerplate</p>
             </div>
 
             <div class="links">
