@@ -1,6 +1,8 @@
+<h1 align="center">Laravel API Boilerplate</h1>
+
 <p align="center">
   Criado com muito ☕ por <a href="https://grupotesseract.com.br">Grupo Tesseract</a><br>
-  <img src="https://img.shields.io/badge/version-0.0.1-5B7587.svg" align="center" alt="Version 0.1.2"><br>
+  <img src="https://img.shields.io/badge/version-0.0.2-5B7587.svg" align="center" alt="Version 0.0.2"><br>
   <br>
   <a href="#requisitos">Requisitos</a> •
   <a href="#instalação">Instalação</a>
@@ -73,7 +75,3 @@ Para rodar os testes, executar:
 ``` sh
 v test tests
 ```
-
-### Deploy
-
-Apenas executar `git push origin master` e o Buddy CI realizará o deploy. Os branchs que estão automatizados são `master`, `stage` e `develop`.
