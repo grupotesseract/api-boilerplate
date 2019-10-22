@@ -1,0 +1,48 @@
+.app-header {
+  .navbar-brand {
+    @include media-breakpoint-up(lg) {
+      width: $sidebar-width;
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: initial;
+      margin-left: 5px;
+      width: auto;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      margin-right: 20px;
+
+      i:first-child {
+        margin-right: 5px;
+      }
+
+      i:last-child {
+        margin-left: 5px;
+      }
+    }
+
+    .dropdown-menu {
+      border-radius: 0 0 4px 4px;
+      top: initial;
+      right: 10px;
+      margin-top: 1rem;
+      padding: 10px 0;
+    }
+
+    .dropdown-item {
+      border-bottom: 0;
+    }
+  }
+
+  .navbar-toggler {
+    z-index: 1;
+
+    &:focus {
+      outline: none;
+
+    }
+  }
+}

@@ -1,0 +1,31 @@
+table#dataTableBuilder {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+div.dataTables_wrapper {
+  div.dataTables_filter {
+    float: right;
+  }
+
+  div.dataTables_info {
+    float: left;
+    font-size: 12px;
+  }
+
+  div.dataTables_paginate {
+    float: right;
+  }
+}
+
+.dt-buttons {
+  .btn {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.25;
+    color: #3f505f;
+    background-color: #fff;
+    border: 1px solid #c8ced3;
+  }
+}

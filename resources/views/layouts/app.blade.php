@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ config('app.name') }}</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ config('app.name') }} | Tesseract API Boilerplate.</title>
+    <meta name="description" content="API Boilerplate do Grupo Tesseract.">
+    <link rel="icon" type="image/x-icon" href="https://grupotesseract.com.br/favicon.ico">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/app.css" />
-    @yield('css')
+    @include('layouts.css')
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -24,8 +24,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/App.js"></script>
-    @yield('scripts')
-    <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.7"></script>
+    @include('layouts.js')
 </body>
 </html>

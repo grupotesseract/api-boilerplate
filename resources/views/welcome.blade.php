@@ -2,13 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }} | Serviços Especializados de Engenharia Ltda.</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tesseract API Boilerplate." />
+    <title>{{ config('app.name') }}</title>
+    <link rel="icon" type="image/x-icon" href="https://grupotesseract.com.br/favicon.ico">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/welcome.css" />
+    <link rel="stylesheet" href="/css/pages/welcome.css" />
 </head>
 
 <body>
@@ -28,12 +30,14 @@
         @endif
 
         <div class="content">
-            <div class="title m-b-md">
-                                    <img src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_200/v1567190357/grupo-tesseract/logo-tesseract-completo-preto.png" />
+            <div class="title">
+                <img class="logo" src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_200/v1567190357/grupo-tesseract/logo-tesseract-completo-preto.png" />
+
+                <p class="slogan">Laravel API Boilerplate</p>
             </div>
 
             <div class="links">
-                <a href="{{ route('login') }}">Login</a>
+                <a class="btn btn-primary px-4" href="{{ route('login') }}">Login</a>
             </div>
         </div>
     </div>

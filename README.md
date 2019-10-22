@@ -1,12 +1,6 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/tesseract/image/upload/v1567190357/grupo-tesseract/logo-tesseract-cubo-preto-borda_gluk0r.png" />
-</p>
-
-<h1 align="center">API Boilerplate</h1>
-
-<p align="center">
   Criado com muito ☕ por <a href="https://grupotesseract.com.br">Grupo Tesseract</a><br>
-  <img src="https://img.shields.io/badge/version-0.0.1-5B7587.svg" align="center" alt="Version 0.1.1"><br>
+  <img src="https://img.shields.io/badge/version-0.0.1-5B7587.svg" align="center" alt="Version 0.1.2"><br>
   <br>
   <a href="#requisitos">Requisitos</a> •
   <a href="#instalação">Instalação</a>
@@ -32,8 +26,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 ## Instalação
 
 ``` sh
-git clone https://github.com/grupotesseract/fibra-api
-cd fibra-api
+git clone https://github.com/grupotesseract/api-boilerplate
+cd api-boilerplate
 ```
 
 É altamente recomendada a criação do alias abaixo. Inclua no seu arquivo `~/.zshrc` ou `~/.bashrc`:
@@ -52,8 +46,8 @@ v art key:generate
 v art migrate
 v art passport:install
 
-v yarn
-v yarn watch
+v y
+v y watch
 ```
 
 ### Comando para gerar um CRUD

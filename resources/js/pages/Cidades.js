@@ -1,22 +1,19 @@
-import Axios from 'axios';
+import Axios from 'axios'
 
 /**
- *
- *
- * @class App
+ * @class Cidades
  */
 class Cidades {
 
   /**
-   *Creates an instance of App.
+   * @constructor
    */
   constructor() {
     this.eventHandlers()
   }
 
   /**
-   *
-   *
+   * @returns
    */
   eventHandlers() {
     $('.select-estados').on('change', async event => {
@@ -24,7 +21,7 @@ class Cidades {
       const ID = event.currentTarget.value;
       const result = await Axios.get(`/estados/${ID}/cidades`)
 
-      for (let [key, value] of Object.entries(result.data)) {
+      for (let [key, value] of Object.entries(result.data.data)) {
         content += `<option value="${key}">${value}</option>`;
       }
 

@@ -1,0 +1,11 @@
+@include media-breakpoint-down(xs) {
+  .aside-menu-show,
+  .sidebar-show {
+    .main {
+      position: relative;
+      &::before {
+        background: none;
+      }
+    }
+  }
+}

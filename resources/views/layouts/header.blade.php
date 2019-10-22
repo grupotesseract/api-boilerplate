@@ -1,21 +1,22 @@
 <header class="app-header navbar">
-    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+    <button class="navbar-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <a class="navbar-brand" href="/home">
-        <img class="navbar-brand-full"
+        <img class="navbar-brand-full logo"
             src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_40/v1567194453/grupo-tesseract/LOGO_PRETO_HORIZONTAL_SEM_FUNDO.png"
-            width="135" height="40" alt="Grupo Tesseract">
-
-        <img class="navbar-brand-minimized"
-            src="https://res.cloudinary.com/tesseract/image/upload/c_scale,h_40/v1567194453/grupo-tesseract/LOGO_PRETO_HORIZONTAL_SEM_FUNDO.png"
-            width="135" height="40" alt="Grupo Tesseract">
+            height="36"
+            alt="Logo Grupo Tesseract" />
     </a>
 
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    <div class="nav navbar-nav">
+        @yield('breadcrumb')
+    </div>
 
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item dropdown">

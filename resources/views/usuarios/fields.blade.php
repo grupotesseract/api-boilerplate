@@ -52,6 +52,13 @@
 
 @endif
 
+{{--
+<!-- Exemplo campo datepicker -->
+<div class="form-group col-sm-6">
+    {!! Form::label('exemplo_datepicker', 'Teste Datepicker') !!}
+    {!! Form::text('exemplo_datepicker', null, ['class' => 'datepicker form-control','id'=>'data_fim_prevista']) !!}
+</div>
+--}}
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

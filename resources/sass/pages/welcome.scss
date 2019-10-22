@@ -1,13 +1,18 @@
+@import '../global/variables';
+
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/root';
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/utilities';
-@import '../typography';
+@import '~bootstrap/scss/buttons';
 
-html, body {
-  background-color: #fff;
+@import '../global/typography';
+@import '../layout/scaffold';
+@import '../layout/images';
+
+body {
   color: #636b6f;
   font-weight: 300;
   height: 100vh;
@@ -19,25 +24,19 @@ html, body {
 }
 
 .flex-center {
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .content {
   text-align: center;
 }
 
-.links > a {
-  color: #636b6f;
-  padding: 0 25px;
-  font-size: 13px;
+.slogan {
+  margin: 20px auto;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: .05rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.m-b-md {
-  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.025);
+  opacity: 0.7;
 }
