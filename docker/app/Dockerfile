@@ -45,7 +45,7 @@ RUN apt-get install -y --no-install-recommends \
     php7.3-zip \
   && php -r "readfile('http://getcomposer.org/installer');" \
     | php -- --install-dir=/usr/bin/ --filename=composer \
-  && mkdir /run/php \
+  && mkdir -p /run/php \
   && apt-get -y autoremove \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
