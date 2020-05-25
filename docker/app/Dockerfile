@@ -22,6 +22,7 @@ RUN apt-get install -y --no-install-recommends \
     nginx \
     supervisor \
     unzip \
+    libxrender1 \
     wkhtmltopdf \
     zip \
     php7.3-bcmath \

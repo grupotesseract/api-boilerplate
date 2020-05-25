@@ -9,6 +9,11 @@
       "command": "./vessel start && ./vessel yarn watch",
       "options": {
         "cwd": "${workspaceFolder}/"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       }
     },
     {
