@@ -15,23 +15,22 @@
   },
   "devDependencies": {
     "@coreui/coreui": "2.1.12",
-    "axios": "0.19.0",
+    "axios": "0.19.2",
     "bootstrap": "4.3.1",
-    "browser-sync": "2.26.7",
+    "browser-sync": "2.26.12",
     "browser-sync-webpack-plugin": "2.2.2",
     "cross-env": "6.0.0",
-    "jquery": "3.4.1",
-    "laravel-mix": "5.0.0",
-    "lodash": "4.17.15",
-    "perfect-scrollbar": "1.4.0",
+    "jquery": "3.5.0",
+    "laravel-mix": "5.0.4",
+    "perfect-scrollbar": "1.5.0",
     "popper.js": "1.15.0",
-    "resolve-url-loader": "3.1.0",
-    "sass": "1.22.12",
+    "resolve-url-loader": "3.1.1",
+    "sass": "1.26.10",
     "sass-loader": "8.0.0",
-    "vue": "2.6.10",
-    "vue-template-compiler": "2.6.10"
+    "vue": "2.6.11",
+    "vue-template-compiler": "2.6.11"
   },
   "resolutions": {
-    "**/**/serialize-javascript": ">=2.1.1"
+    "**/**/yargs-parser": ">=13.1.2 <14.0.0 || >=15.0.1 <16.0.0 || >=18.1.2"
   }
 }
