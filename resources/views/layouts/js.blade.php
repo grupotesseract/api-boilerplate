@@ -9,5 +9,5 @@
 @yield('scripts')
 
 @if (env('APP_ENV') === 'local')
-    <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.7"></script>
+    <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.12"></script>
 @endif

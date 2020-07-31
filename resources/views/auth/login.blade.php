@@ -9,12 +9,10 @@
     <title>{{ config('app.name') }} | Login </title>
     <meta name="description" content="CoreUI Template - InfyOm Laravel Generator">
     <meta name="keyword" content="CoreUI,Bootstrap,Admin,Template,InfyOm,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+
+    @include('layouts.prefetch')
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@2.1.16/dist/css/coreui.min.css">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
-
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" />
     <link rel="stylesheet" href="/css/pages/login.css" />
 </head>
 
@@ -90,14 +88,9 @@
         </div>
     </div>
 
-    <!-- CoreUI and necessary plugins-->
-    {{-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script> --}}
-
-    <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.7"></script>
+    @if (env('APP_ENV') === 'local')
+        <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.12"></script>
+    @endif
 </body>
 
 </html>

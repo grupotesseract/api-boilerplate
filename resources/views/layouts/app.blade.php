@@ -2,12 +2,14 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ config('app.name') }} | Tesseract API Boilerplate.</title>
-    <meta name="description" content="API Boilerplate do Grupo Tesseract.">
-    <link rel="icon" type="image/x-icon" href="https://grupotesseract.com.br/favicon.ico">
+    <meta name="description" content="API Boilerplate do Grupo Tesseract." />
+
+    @include('layouts.prefetch')
+    <link rel="icon" type="image/x-icon" href="https://grupotesseract.com.br/favicon.ico" />
 
     <!-- CSS -->
     @include('layouts.css')
