@@ -4,24 +4,13 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Vessel: start",
+      "label": "frontend",
       "type": "shell",
-      "command": "./vessel start && ./vessel yarn watch",
-      "options": {
-        "cwd": "${workspaceFolder}/"
-      },
+      "command": "./vessel start && ./vessel yarn && ./vessel yarn watch",
       "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
-      }
-    },
-    {
-      "label": "Vessel: hot reload",
-      "type": "shell",
-      "command": "./vessel yarn hot",
-      "options": {
-        "cwd": "${workspaceFolder}/"
       }
     }
   ]
