@@ -1,7 +1,5 @@
-public/mix-manifest.json
-
-# Created by https://www.gitignore.io/api/git,node,linux,macos,windows,laravel,sublimetext,visualstudiocode,vim
-# Edit at https://www.gitignore.io/?templates=git,node,linux,macos,windows,laravel,sublimetext,visualstudiocode,vim
+# Created by https://www.toptal.com/developers/gitignore/api/git,vim,node,linux,macos,windows,laravel,sublimetext,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,vim,node,linux,macos,windows,laravel,sublimetext,visualstudiocode
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -33,12 +31,21 @@ public/storage
 public/css
 public/js
 public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
 storage/*.key
 .env
 Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+# Laravel IDE helper
+*.meta.*
+_ide_*
 
 ### Linux ###
 *~
@@ -138,6 +145,12 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
 # Optional REPL history
 .node_repl_history
 
@@ -153,11 +166,18 @@ typings/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-# next.js build output
+# Next.js build output
 .next
 
-# nuxt.js build output
+# Nuxt.js build / generate output
 .nuxt
+dist
+
+# Gatsby files
+.cache/
+# Comment in the public line in if your project uses Gatsby and not Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
 
 # vuepress build output
 .vuepress/dist
@@ -170,6 +190,12 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
 
 ### SublimeText ###
 # Cache files for Sublime Text
@@ -206,6 +232,7 @@ GitHub.sublime-settings
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
@@ -228,6 +255,7 @@ tags
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+*.code-workspace
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
@@ -259,4 +287,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/git,node,linux,macos,windows,laravel,sublimetext,visualstudiocode,vim
+# End of https://www.toptal.com/developers/gitignore/api/git,vim,node,linux,macos,windows,laravel,sublimetext,visualstudiocode
