@@ -45,24 +45,29 @@ cp .env.example .env
 v start
 v comp i
 v art key:generate
-v art migrate
+v art migrate --seed
 v art passport:install
 
 v y
 v y watch
 ```
 
+A partir de agora, você já deve conseguir visualizar a página inicial através do endereço http://localhost/. Tente efetuar login através do acesso:
+
+Email = admin@grupotesseract.com.br
+Senha = 12344321
+
 ### Comando para gerar um CRUD
 
-- Criar arquivo na pasta `database/model_schemas` referente a entidade desejada;
-- Executar o comando abaixo ao gerar algum CRUD, para gerar factories, seeds, e deixar os nomes das rotas e views semânticos de acordo com o plural
+- Criar arquivo na pasta `database/model_schemas` referente a entidade desejada. Nesta pasta, é possível visualizar exemplos de como criar a entidade e seus relacionamentos;
+- Executar o comando abaixo ao gerar algum CRUD, para gerar factories, seeds, e deixar os nomes das rotas e views semânticos de acordo com o plural. SUBSTITUIR a entidade de exemplo com o nome da nova entidade a ser criada, assim como o novo arquivo relacionado criado
 
 ``` sh
 v art \
-  infyom:api_scaffold TipoMaterial \
-  --tableName=tipos_materiais \
-  --plural=TiposMateriais \
-  --fieldsFile=TipoMaterial.json \
+  infyom:api_scaffold Cidade \
+  --tableName=cidades \
+  --plural=cidades \
+  --fieldsFile=Cidade.json \
   --datatables=true \
   --factory \
   --seeder

@@ -14,7 +14,7 @@ class AdminUserSeeder extends Seeder
     {
         $userAdmin = factory(\App\Models\Usuario::class)->create([
             'email' => env('ADMIN_EMAIL', 'admin@grupotesseract.com.br'),
-            'password' => bcrypt(env('ADMIN_PASSWORD', '12344321')),
+            'password' => bcrypt(env('ADMIN_PASSWORD', 'admin')),
             'nome' => 'Admin Tesseract',
             'cidade_id' => Cidade::where('nome', 'Bauru')->first()->id,
         ]);
