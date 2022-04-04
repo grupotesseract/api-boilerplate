@@ -54,8 +54,8 @@ v y watch
 
 A partir de agora, você já deve conseguir visualizar a página inicial através do endereço http://localhost/. Tente efetuar login através do acesso:
 
-Email = admin@grupotesseract.com.br
-Senha = 12344321
+- Email = admin@grupotesseract.com.br
+- Senha = admin
 
 ### Comando para gerar um CRUD
 
