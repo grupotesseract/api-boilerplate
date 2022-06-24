@@ -1,4 +1,4 @@
-version: '2'
+version: '3.8'
 
 services:
   app:
@@ -7,13 +7,14 @@ services:
       dockerfile: Dockerfile
     image: vessel/app
     ports:
-      - '${APP_PORT}:80'
+      - ${APP_PORT}:80
     environment:
-      CONTAINER_ENV: '${APP_ENV}'
-      XDEBUG_HOST: '${XDEBUG_HOST}'
-      WWWUSER: '${WWWUSER}'
+      CONTAINER_ENV: ${APP_ENV}
+      XDEBUG_CONFIG: ${XDEBUG_CONFIG:-client_host=10.0.0.2}
+      XDEBUG_MODE: ${XDEBUG_MODE:-off}
+      WWWUSER: ${WWWUSER}
     volumes:
-      - .:/var/www/html
+      - .:/app
     networks:
       - vessel
 
@@ -22,24 +23,24 @@ services:
       context: ./docker/node
       dockerfile: Dockerfile
       args:
-        uid: '${WWWUSER}'
+        uid: ${WWWUSER}
     image: vessel/node
     user: node
     ports:
-      - '3000:3000'
+      - 3000:3000
     volumes:
-      - .:/var/www/html
+      - .:/app
     networks:
       - vessel
 
   pgsql:
-    image: postgres:10.0
+    image: postgres:12.8
     ports:
-      - '${PGSQL_PORT}:5432'
+      - ${PGSQL_PORT}:5432
     environment:
-      POSTGRES_USER: '${DB_USERNAME}'
-      POSTGRES_PASSWORD: '${DB_PASSWORD}'
-      POSTGRES_DB: '${DB_DATABASE}'
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
     volumes:
       - vesselpgsql:/var/lib/postgresql/data
     networks:
@@ -47,8 +48,8 @@ services:
 
 networks:
   vessel:
-    driver: 'bridge'
+    driver: bridge
 
 volumes:
   vesselpgsql:
-    driver: 'local'
+    driver: local
